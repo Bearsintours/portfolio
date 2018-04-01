@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">   
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+</head>
+
+<body>
+    <!-- START NAVBAR-->
+    <nav id="navbar" class="navbar fixed-top navbar-dark navbar-expand-md container-fluid">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-home"></i>
+            <span>Quentin Brogly</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <div class="navbar-nav ml-auto">
+                <a id="aboutLink" class="nav-item nav-link" href="#about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a id="workLink" class="nav-item nav-link" href="#work">
+                    <i class="fas fa-code"></i>
+                    <span>Work</span>
+                </a>
+                <a id="contactLink" class="nav-item nav-link" href="#contact">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!--END NAVBAR -->
+
+    <div class="container-fluid">
+
+        <!-- START HELLO SECTION -->
+        <div id="hello" class="section text-center">
+            <h1>Hello and welcome!</h1>
+            <!--       <h3>About me</h3>  -->
+            <a href="#about" id="arrowIconAbout">
+                <i class="fas fa-arrow-circle-down fa-3x"></i>
+            </a>
+        </div>
+        <!-- END HELLO SECTION -->
+
+        <!-- START ABOUT SECTION -->
+        <div id="about" class="section">
+            <div class="social-media-icons text-center">
+                <a href="https://github.com/Bearsintours" target="_blank">
+                    <i class="fab fa-github fa-5x"></i>
+                </a>
+                <i class="fab fa-codepen fa-5x"></i>
+                <a href="https://www.freecodecamp.org/bearsintours" target="_blank">
+                    <i class="fab fa-free-code-camp fa-5x"></i>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center about__text">
+                    <p class="text-left">
+                        I'm Quentin, a self-taught web developer leaving in Los Angeles, CA. I'm a hard-working learner with a flair for creating
+                        elegant front-end solutions.
+                        <br> I have a degree in Business Management and I can't wait to transfer 7 years experience of servicing
+                        clients to a web developement position!
+                        <br> When I don't code or help out in my local coding meetup, I ride my bicycle, I watch (too much) and
+                        play (too little) soccer or I read french novels. I also love exploring national parks and sharing
+                        my enthousiasm for Mexican food.
+                    </p>
+                </div>
+                <div class="col-lg-6 about__tools">
+                    <h5 class="text-center">These are the tools I use:</h5>
+                    <div class="row justify-content-center">
+                        <div class="col-xs-6 tools">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Javascript</li>
+                                <li>Bootstrap</li>
+                                <li>React JS</li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-6 tools">
+                            <ul>
+                                <li>JQuery</li>
+                                <li>Sass</li>
+                                <li>Git</li>
+                                <li>Python</li>
+                                <li>PHP</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center about__icon">
+                <a href="#work" id="arrowIconWork">
+                    <i class="fas fa-arrow-circle-down fa-3x"></i>
+                </a>
+            </div>
+        </div>
+        <!-- END ABOUT SECTION -->
+
+        <!-- START WORK SECTION -->
+        <div id="work" class="porfolio section">
+            <h1 class="text-center portfolio__title">Projects</h1>
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-lg-6 portfolio__project">
+                        <div class="row">
+                            <div class="col-sm-5 text-center">
+                                <h4 class="portfolio__project__title">Tic Tac Toe Game</h4>
+                                <p class="portfolio__project__description">
+                                    A 1 player version of Tic Tac Toe game built with Vanilla JS
+                                </p>
+                            </div>
+                            <div class="col-sm-7 portfolio__project__img">
+                                <button class="btn btn-dark link-btn">
+                                    <a href="https://codepen.io/Bearsintours/full/QOgOXR/" target="_blank">
+                                        View project
+                                    </a>
+                                </button>
+                                <img src="https://github.com/Bearsintours/portfolio/blob/master/images/tic-tac-toe.png?raw=true" </img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 portfolio__project">
+                        <div class="row">
+                            <div class="col-sm-5 text-center order-sm-1">
+                                <h4 class="portfolio__project__title">Pomodoro Clock</h4>
+                                <p class="portfolio__project__description">
+                                    An app for distraction-fighting... (it works!)
+                                </p>
+                            </div>
+                            <div class="col-sm-7 portfolio__project__img">
+                                <button class="btn btn-dark link-btn">
+                                    <a href="https://codepen.io/Bearsintours/full/QqxWZx/" target="_blank">
+                                        View project
+                                    </a>
+                                </button>
+                                <img src="https://github.com/Bearsintours/portfolio/blob/master/images/pomodoro-clock.png?raw=true">
+                                </img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 portfolio__project">
+                        <div class="row">
+                            <div class="col-sm-5 text-center">
+                                <h4 class="portfolio__project__title">Simon Game</h4>
+                                <p class="portfolio__project__description">
+                                    My version of this legendary electronic game. Built with Vanilla JS
+                                </p>
+                            </div>
+                            <div class="col-sm-7 portfolio__project__img">
+                                <button class="btn btn-dark link-btn">
+                                    <a href="https://codepen.io/Bearsintours/full/eyJwRJ/" target="_blank">
+                                        View project
+                                    </a>
+                                </button>
+                                <img src="https://github.com/Bearsintours/portfolio/blob/master/images/simon-game.png?raw=true" </img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 portfolio__project">
+                        <div class="row">
+                            <div class="col-sm-5 text-center order-sm-1">
+                                <h4 class="portfolio__project__title">Calculator</h4>
+                                <p class="portfolio__project__description">
+                                    A simple Javascript calculator using jQuery
+                                </p>
+                            </div>
+                            <div class="col-sm-7 portfolio__project__img">
+                                <button class="btn btn-dark link-btn">
+                                    <a href="https://codepen.io/Bearsintours/full/VMKgzv/" target="_blank">
+                                        View project
+                                    </a>
+                                </button>
+                                <img src="https://github.com/Bearsintours/portfolio/blob/master/images/calculator.png?raw=true">
+                                </img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6 portfolio__project">
+                        <div class="row">
+                            <div class="col-sm-5 text-center">
+                                <h4 class="portfolio__project__title">Weather App</h4>
+                                <p class="portfolio__project__description">
+                                    Shows the current weather in your location. Built with jQuery and openweather API
+                                </p>
+                            </div>
+                            <div class="col-sm-7 portfolio__project__img">
+                                <button class="btn btn-dark link-btn">
+                                    <a href="https://codepen.io/Bearsintours/full/BQemJ/" target="_blank">
+                                        View project
+                                    </a>
+                                </button>
+                                <img src="https://github.com/Bearsintours/portfolio/blob/master/images/weather-app.png?raw=true" </img>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 portfolio__project">
+                        <div class="row">
+                            <div class="col-sm-5 text-center order-sm-1">
+                                <h4 class="portfolio__project__title">Quote Machine</h4>
+                                <p class="portfolio__project__description">
+                                    Generates random quotes from soccer people. Built with jQuery
+                                </p>
+                            </div>
+                            <div class="col-sm-7 portfolio__project__img">
+                                <button class="btn btn-dark link-btn">
+                                    <a href="https://codepen.io/Bearsintours/full/oYJZJ/" target="_blank">
+                                        View project
+                                    </a>
+                                </button>
+                                <img src="https://github.com/Bearsintours/portfolio/blob/master/images/random-quote.png?raw=true">
+                                </img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center portfolio__icon">
+                <a href="#work" id="arrowIconContact">
+                    <i class="fas fa-arrow-circle-down fa-3x"></i>
+                </a>
+            </div>
+        </div>
+        <!-- END WORK SECTION -->
+
+        <!-- START CONTACT SECTION -->
+        <div id="contact" class="section">
+            <h1 class="text-center">Contact me:</h1>
+            <div class="form-wrapper">
+                <form>
+                    <!-- inputs -->
+                    <div class="form-group">
+                        <label class="sr-only" for="name">Name</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <span class="fas fa-user" aria-hidden="true"></span>
+                            </div>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <span class="fas fa-envelope" aria-hidden="true"></span>
+                            </div>
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="subject">Subject</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <span class="fas fa-question-circle" aria-hidden="true"></span>
+                            </div>
+                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>
+                    </div>
+                    <!-- buttons -->
+                    <div class="btn-group pull-right" role="group">
+                        <button type="submit" class="btn btn-primary submit">
+                            Send
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- END CONTACT SECTION -->
+    </div>
+    <!-- end container -->
+    <script src="main.js"></script>
+</body>
+
+</html>
