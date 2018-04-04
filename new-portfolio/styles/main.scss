@@ -107,11 +107,14 @@ a span {
 /* Hello */
 #hello {
   background: linear-gradient( rgba(49, 77, 146, 0.4), rgba(49, 77, 146, 0.4)), url('https://images.unsplash.com/photo-1515965885361-f1e0095517ea?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1784b1578fa6ead4ed29e0f402ca9d32&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center center;
   color: $background-light;
   min-height: 100vh;
   padding: 10% 0 2% 0;
   h1 {
     margin: 2% 0 15% 0;
+    font-size: 4em;
   }
   h3 {
     margin: 5% 0 1.5% 0;
