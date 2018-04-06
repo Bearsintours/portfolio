@@ -81,7 +81,7 @@
                 <div class="col-lg-6 about__tools">
                     <h5 class="text-center"><i class="fas fa-wrench"></i> My toolbox:</h5>
                     <div class="row justify-content-center">
-                        <div class="col-xs-6 tools">
+                        <div class="col-xs-6 about__tools__col">
                             <ul>
                                 <li>HTML5</li>
                                 <li>CSS3</li>
@@ -89,7 +89,7 @@
                                 <li>Bootstrap</li>    
                             </ul>
                         </div>
-                        <div class="col-xs-6 tools">
+                        <div class="col-xs-6 about__tools__col">
                             <ul>
                                 <li>Javascript</li>
                                 <li>JQuery</li>
@@ -203,7 +203,7 @@
                             <div class="col-sm-5 text-center">
                                 <h4 class="portfolio__project__title">Weather App</h4>
                                 <p class="portfolio__project__description">
-                                    Shows the current weather in your location. Built with jQuery and openweather API
+                                    Shows the current weather in your location. Built with jQuery
                                 </p>
                             </div>
                             <div class="col-sm-7 portfolio__project__img">
@@ -221,7 +221,7 @@
                             <div class="col-sm-5 text-center order-sm-1">
                                 <h4 class="portfolio__project__title">Quote Machine</h4>
                                 <p class="portfolio__project__description">
-                                    Generates random quotes from soccer people. Built with jQuery
+                                    Generates random soccer quotes. Built with jQuery
                                 </p>
                             </div>
                             <div class="col-sm-7 portfolio__project__img">
@@ -279,7 +279,13 @@
                                     <i class="fa-fw fa fa-question-circle"></i>
                                 </span>
                             </div>
-                            <textarea class="form-control" placeholder="Message" rows="5"></textarea>
+                            <input type="subject" class="form-control" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group input-group-lg">
+                            <label class="sr-only" for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="6" placeholder="Message"></textarea>                
                         </div>
                     </div>
                     <div class="btn-group pull-right" role="group">
