@@ -1,15 +1,17 @@
+var rellax = new Rellax('.rellax');
+
 $(document).ready(function () {
 
     $('.section').css('min-height', (window.innerHeight + 'px'));
 
     //Change navbar background color from 200px
-    // $(window).scroll(function() {
-    //   if($(this).scrollTop() > 200) { 
-    //     $('#navbar').addClass('blue-background');
-    //   } else {
-    //     $('#navbar').removeClass('blue-background'); 
-    //   }
-    // });  
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 20) { 
+        $('#navbar').addClass('dark-background');
+      } else {
+        $('#navbar').removeClass('dark-background'); 
+      }
+    });  
 
     // Remove navbar-collapse on link click
     $('.navbar-nav > a').on('click', function () {
@@ -21,8 +23,6 @@ $(document).ready(function () {
         e.preventDefault();
         $.scrollTo($("#about"), {
             duration: 1000,
-            // offset added to final position for precision
-            offset: { top: -50 }
         })
     });
     $("#arrowIconWork").click(function (e) {
@@ -66,7 +66,7 @@ $(document).ready(function () {
     $('.form-wrapper button.submit').click(function (e) {
         // prevent default submit
         e.preventDefault();
-    });
-
+    });    
+ 
 });
 

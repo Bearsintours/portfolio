@@ -35,7 +35,8 @@ body {
 
 /* Navbar */
 #navbar {
-  background-color: #3c3e47;
+  background-color: rgba(60, 62, 71, 0.7);
+  color: #f0f0e6;
   height: 60px;
   text-transform: uppercase;
   transition: background-color 1s ease 0s;
@@ -43,7 +44,6 @@ body {
   z-index: 100; }
 
 .navbar-brand {
-  color: #f0f0e6 !important;
   font-size: 0.9em;
   margin-left: 2%;
   transition: all 300ms linear; }
@@ -66,20 +66,16 @@ a span {
   padding: 0 5px; }
 
 .navbar-dark .navbar-toggler {
-  color: #f0f0e6 !important;
   cursor: pointer;
   margin-right: 2%; }
-  .navbar-dark .navbar-toggler .navbar-toggler-icon {
-    color: #f0f0e6 !important; }
 
 .navbar-collapse {
-  background-color: #3c3e47;
+  background-color: transparent;
   width: 100%;
   padding: 0; }
 
-.blue-background {
-  background-color: transparent !important;
-  color: black !important;
+.dark-background {
+  background-color: #3c3e47 !important;
   transition: background-color 1s ease 0s; }
 
 /* Hello */
@@ -95,7 +91,6 @@ a span {
   #hello h1 {
     margin: 100px 0 50px 0;
     font-size: 4em;
-    text-transform: uppercase;
     font-weight: 800; }
   #hello h3 {
     margin: 5% 0 1.5% 0; }
@@ -231,6 +226,8 @@ img {
     font-size: 2.5em; }
   .navbar-nav > a {
     margin-left: 2%; }
+  .navbar-collapse {
+    background-color: #3c3e47; }
   .portfolio__project__description {
     margin-bottom: 20px; }
   .form-wrapper {
