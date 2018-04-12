@@ -3,10 +3,10 @@
 
 
 /* Colors */
-$text: #3c3e47;
-$nav-text: #f0f0e6;
-$background-blue: #0e7ada;
-$background-light: #f0f0e6;
+$grey: #3c3e47;
+$light: #f0f0e6;
+$white: #F5F5F5;
+$blue: #0e7ada;
 
 
 /* Resets */
@@ -33,12 +33,10 @@ a:visited {
 
 /* General settings */
 body {
-  color: $text;
+  color: $grey;
   font-family: "comfortaa", helvetica, arial, sans-serif;
   height: 100%;
   max-width: 100%;
-  overflow-y: scroll;
-  position: relative;
 }
 
 .container-fluid {
@@ -46,11 +44,15 @@ body {
   padding: 0;
 }
 
+.active {
+  border-bottom: 1px solid #f0f0e6;
+}
+
 /* Navbar */
 #navbar {
-  background-color: rgba(60, 62, 71, 0.7);
-  //background-color: transparent;
-  color: #f0f0e6;
+  //background-color: rgba(60, 62, 71, 0.7);
+  background-color: $grey;
+  color: $light;
   height: 60px;
   text-transform: uppercase;
   transition: background-color 1s ease 0s;
@@ -69,11 +71,11 @@ body {
 }
 
 .navbar-dark .navbar-toggler {
-  border: 1px solid #f0f0e6;
+  border: 1px solid $light;
 }
 
 .navbar-nav > a {
-  color: #f0f0e6 !important;
+  color: $light !important;
   font-size: 0.9em;
   transition: all 300ms linear;
 }
@@ -99,7 +101,6 @@ a span {
 
 .dark-background {
   background-color: rgba(60, 62, 71, 1) !important;
-  //opacity: 1;
   transition: background-color 1s ease 0s;
 }
 
@@ -112,7 +113,7 @@ a span {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: $background-light;
+  color: $light;
   min-height: 100vh;
   padding-top: 200px;
   h1 {
@@ -129,7 +130,7 @@ a span {
 
 /* About */
 #about {
-  background-color: #F5F5F5;
+  background-color: $white;
   border-bottom: #dddddd solid 1px;
   min-height: 100vh;
   padding: 100px 50px;
@@ -164,7 +165,7 @@ a span {
   min-width:30%;
   ul {
     list-style: none;
-    color: $background-blue;
+    color: $blue;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -241,7 +242,7 @@ img {
 
 /* Contact */ 
 #contact {
-  background-color: #F5F5F5;
+  background-color: $white;
   min-height: 100vh;
   padding: 100px 50px;
   h1 {
@@ -302,7 +303,7 @@ img {
     margin-left: 2%;
   }
   .navbar-collapse {
-    background-color: #3c3e47;
+    background-color: $grey;
   }
   .portfolio__project__description {
     margin-bottom: 20px;
