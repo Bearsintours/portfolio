@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $('.section').css('min-height', (window.innerHeight + 'px'));
 
-    //Change navbar background color from 200px
+    //Change navbar background color from 20px
     $(window).scroll(function () {
         if ($(this).scrollTop() > 20) {
             $('#navbar').addClass('dark-background');

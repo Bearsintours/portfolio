@@ -24,7 +24,7 @@ a,
 a:hover,
 a:active,
 a:visited {
-	color: inherit;
+  color: inherit;
 	text-decoration: none !important;
 	background: none !important;
 	outline: none;
@@ -45,14 +45,15 @@ body {
 }
 
 .active {
-  border-bottom: 1px solid #f0f0e6;
+  color: $white !important;
+  font-weight: bold;
 }
 
 /* Navbar */
 #navbar {
   //background-color: rgba(60, 62, 71, 0.7);
   background-color: $grey;
-  color: $light;
+  box-shadow: 0 2px 18px -5px #888;
   height: 60px;
   text-transform: uppercase;
   transition: background-color 1s ease 0s;
@@ -61,13 +62,15 @@ body {
 }
 
 .navbar-brand {
+  color: $white !important;
   font-size: 0.9em;
   margin-left: 2%;
   transition: all 300ms linear;
 }
 
 .navbar-brand:hover {
-  color: #a8a8a1 !important;
+  color: $white !important;
+  //color: #ccc !important;
 }
 
 .navbar-dark .navbar-toggler {
@@ -75,13 +78,13 @@ body {
 }
 
 .navbar-nav > a {
-  color: $light !important;
+  color: $light;
   font-size: 0.9em;
   transition: all 300ms linear;
 }
 
 .nav-link:hover {
-  color: #a8a8a1 !important;
+  color: $white !important;
 }
 
 a span {
@@ -179,8 +182,7 @@ a span {
 
 /* Work */
 #work {
-  //background-color: #FFF;
-  background-color: #fafafa;
+  background-color: #e7e7e7;
   border-bottom: #dddddd solid 1px;
   min-height: 100vh;
   padding: 100px 50px;
@@ -200,6 +202,8 @@ a span {
 }
 
 img {
+  box-shadow: 0 4px 6px 0 $grey;
+  //box-shadow: 3px 5px 5px $grey;
   position: relative;
   width: 100%; 
   opacity: 1;
@@ -221,7 +225,6 @@ img {
 .portfolio__project__img:hover img {
   opacity: 0.6;
   z-index: 0;
-  box-shadow: 3px 5px 5px black;
 }
 
 .link-btn {
@@ -243,6 +246,7 @@ img {
 /* Contact */ 
 #contact {
   background-color: $white;
+  //background-color: #FFF;
   min-height: 100vh;
   padding: 100px 50px;
   h1 {
@@ -253,6 +257,11 @@ img {
 .form-wrapper {
   width: 60%;
   margin: auto;
+}
+
+#contact .btn {
+  background-color: $blue;
+  color: $light;
 }
 
 
